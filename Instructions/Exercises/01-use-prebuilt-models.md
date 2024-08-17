@@ -40,7 +40,7 @@ Mari mulai dengan menggunakan **Azure AI Document Intelligence Studio** dan mode
 1. Di kiri atas, pilih **Jalankan Analisis**.
 1. Ketika analisis selesai, teks yang diekstrak dari gambar ditampilkan di sebelah kanan di tab **Konten**. Tinjau teks ini dan bandingkan dengan teks dalam gambar asli untuk akurasi.
 1. Pilih tab **Hasil**. Tab ini menampilkan kode JSON yang diekstrak. 
-1. Gulir ke bagian bawah kode JSON di tab **Hasil**. Perhatikan bahwa model baca telah mendeteksi bahasa setiap rentang. Sebagian besar rentang menggunakan bahasa Jerman (kode bahasa `de`) tetapi Anda dapat menemukan kode bahasa lain dalam rentang (misalnya bahasa Inggris - kode bahasa `en` - dalam salah satu rentang terakhir).
+1. Gulir ke bagian bawah kode JSON di tab **Hasil** Perhatikan bahwa model baca telah mendeteksi bahasa setiap rentang yang ditunjukkan oleh`locale`. Sebagian besar rentang menggunakan bahasa Jerman (kode bahasa `de`) tetapi Anda dapat menemukan kode bahasa lain dalam rentang (misalnya bahasa Inggris - kode bahasa `en` - dalam salah satu rentang terakhir).
 
     ![Cuplikan layar memperlihatkan deteksi bahasa untuk dua rentang dalam hasil dari model baca di Azure AI Document Intelligence Studio.](../media/language-detection.png#lightbox)
 
