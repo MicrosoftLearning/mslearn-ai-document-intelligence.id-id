@@ -20,7 +20,7 @@ Sekarang mari gunakan SDK layanan untuk mengembangkan aplikasi menggunakan Visua
 1. Buka palet (SHIFT+CTRL+P) dan jalankan **Git: Perintah klon** untuk mengkloning repositori `https://github.com/MicrosoftLearning/mslearn-ai-document-intelligence` ke folder lokal (tidak masalah folder mana).
 1. Setelah repositori dikloning, buka folder di Visual Studio Code.
 
-    > **Catatan**: Jika Visual Studio Code menampilkan pesan pop-up yang meminta Anda untuk memercayai kode yang Anda buka, klik opsi **Ya, saya memercayai penulisnya** pada pop-up tersebut.
+    > **Catatan**: Jika Visual Studio Code menampilkan pesan pop-up yang meminta Anda memercayai kode yang Anda buka, klik opsi **Ya, saya memercayai pembuatnya** di pop-up.
 
 1. Tunggu sementara file tambahan diinstal untuk mendukung proyek kode C# di repositori.
 
@@ -126,9 +126,10 @@ Sekarang Anda akan melatih model menggunakan file yang diunggah ke akun penyimpa
         - Pilih *Lanjutkan*.
     - Pilih *Buat proyek*
 
-1. Setelah proyek Anda dibuat, pilih **Latih** untuk melatih model Anda. Gunakan konfigurasi berikut:
+1. Setelah proyek Anda dibuat, di kanan atas layar, pilih **Latih** untuk melatih model Anda. Gunakan konfigurasi berikut:
     - **ID Model**: *Berikan nama unik secara global (Anda memerlukan nama ID model di langkah berikutnya)*. 
     - **Mode Pembuatan**: Templat.
+1. Pilih **Buka Model**.
 1. Pelatihan dapat memerlukan waktu lama. Anda akan melihat pemberitahuan ketika sudah selesai.
 
 ## Menguji model Document Intelligence kustom
@@ -144,7 +145,7 @@ Sekarang Anda akan melatih model menggunakan file yang diunggah ke akun penyimpa
     **Python**:
 
     ```powershell
-    pip install azure-ai-formrecognizer==3.3.0
+    pip install azure-ai-formrecognizer==3.3.3
     ```
 
 1. Di Visual Studio Code, di folder **Labfiles/02-custom-document-intelligence**, pilih bahasa yang Anda gunakan. Edit file konfigurasi (**appsettings.json** atau **.env**, bergantung pada preferensi bahasa Anda) dengan nilai berikut:

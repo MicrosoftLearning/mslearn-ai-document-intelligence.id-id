@@ -49,14 +49,14 @@ Untuk membuat model yang disusun, pertama-tama kita harus membuat dua model kust
 1. Di kotak teks **Nama proyek**, ketik **1040 Formulir**, lalu pilih **Lanjutkan**.
 1. Di halaman **Konfigurasikan sumber daya layanan**, di daftar drop-down **Langganan**, pilih langganan Azure Anda.
 1. Di daftar drop-down **Grup sumber daya**, pilih **DocumentIntelligenceResources&lt;xxxx&gt;** yang dibuat untuk Anda.
-1. Di daftar drop-down **Sumber Daya Layanan Azure AI Document Intelligence atau Azure AI**, pilih **DocumentIntelligence&lt;xxxx&gt;**.
-1. Di daftar drop-down **Versi API**, pastikan bahwa **2023-10-31-pratinjau** dipilih, lalu pilih **Lanjutkan**.
+1. Di daftar menurun **Document Intelligence atau Cognitive Service Resource** pilih **DocumentIntelligence&lt;xxxx&gt;**.
+1. Di daftar menurun **Versi API** pastikan bahwa **2024-07-31 (Pratinjau)** dipilih, lalu pilih **Lanjutkan**.
 1. Di halaman **Sambungkan sumber daya pelatihan**, di daftar drop-down **Langganan**, pilih langganan Azure Anda.
 1. Di daftar drop-down **Grup sumber daya**, pilih **DocumentIntelligenceResources&lt;xxxx&gt;**.
 1. Di daftar drop-down **Akun penyimpanan**, pilih nama satu-satunya akun penyimpanan yang terdaftar. Jika Anda memiliki beberapa akun penyimpanan di dalam langganan, pilih akun penyimpanan yang dimulai dengan *docintelstorage*
 1. Di daftar drop-down **Kontainer blob**, pilih **1040examples**, lalu pilih **Lanjutkan**.
 1. Di halaman **Tinjau dan buat**, pilih **Buat proyek**.
-1. Pilih **Jalankan tata letak** di pop-up *Mulai pelabelan sekarang*, lalu tunggu hingga analisis selesai.
+1. Pilih **Jalankan sekarang** di bawah *Jalankan tata letak* pada pop-up *Mulai pelabelan sekarang* lalu tunggu hingga analisis selesai.
 
 ## Memberi label model kustom 1040 Formulir
 
@@ -74,7 +74,7 @@ Sekarang, mari kita beri label bidang dalam formulir contoh:
 1. Di kanan atas halaman, pilih **+ Tambahkan bidang**, lalu pilih **Bidang**.
 1. Ketikkan **NegaraBagian**, lalu tekan *Enter*.
 1. Dalam dokumen, pilih **CA**, lalu pilih **NegaraBagian**.
-1. Ulangi proses pemberian label untuk formulir yang tersisa dalam daftar di sebelah kiri, menggunakan label yang telah Anda buat. Beri label empat bidang yang sama: *FirstName*, *LastName*, *City*, dan *State*.
+1. Ulangi proses pemberian label untuk formulir yang tersisa dalam daftar di sebelah kiri, menggunakan label yang telah Anda buat. Beri label empat bidang yang sama: *FirstName*, *LastName*, *City*, dan *State*. Perhatikan bahwa salah satu dokumen tidak memiliki data kota atau status.
 
 > **PENTING** Untuk tujuan latihan ini, kita hanya menggunakan lima formulir contoh dan hanya memberi label empat bidang. Dalam model dunia nyata, Anda harus menggunakan sebanyak mungkin sampel untuk memaksimalkan akurasi dan keyakinan prediksi Anda. Anda juga harus memberi label semua bidang yang tersedia dalam formulir, bukan hanya empat bidang.
 
@@ -82,7 +82,7 @@ Sekarang, mari kita beri label bidang dalam formulir contoh:
 
 Sekarang setelah formulir sampel diberi label, kita dapat melatih model kustom pertama:
 
-1. Di Azure AI Document Intelligence Studio, pilih **Latih**.
+1. Di Azure AI Document Intelligence Studio, di kanan atas layar pilih **Latih**.
 1. Dalam dialog **Latih model baru**, di kotak teks **ID Model**, ketik **1040FormsModel**.
 1. Dalam daftar drop-down **Mode build**, pilih **Template**, lalu pilih **Latih**. 
 1. Dalam dialog **Pelatihan sedang berlangsung**, pilih **Buka Model**.
@@ -96,14 +96,15 @@ Sekarang, Anda harus membuat model kedua, yang akan Anda latih pada contoh formu
 1. Di kotak teks **Nama proyek**, ketik **1099 Formulir**, lalu pilih **Lanjutkan**.
 1. Di halaman **Konfigurasikan sumber daya layanan**, di daftar drop-down **Langganan**, pilih langganan Azure Anda.
 1. Di daftar drop-down **Grup sumber daya**, pilih **DocumentIntelligenceResources&lt;xxxx&gt;**.
-1. Di daftar drop-down **Sumber Daya Layanan Azure AI Document Intelligence atau Azure AI**, pilih **DocumentIntelligence&lt;xxxx&gt;**.
-1. Di daftar drop-down **Versi API**, pastikan bahwa **20223-10-31-pratinjau** dipilih, lalu pilih **Lanjutkan**.
+1. Di daftar menurun **Document Intelligence atau Cognitive Service Resource** pilih **DocumentIntelligence&lt;xxxx&gt;**.
+1. Di daftar menurun **Versi API** pastikan bahwa **2024-07-31 (Pratinjau)** dipilih, lalu pilih **Lanjutkan**.
 1. Di halaman **Sambungkan sumber daya pelatihan**, di daftar drop-down **Langganan**, pilih langganan Azure Anda.
 1. Di daftar drop-down **Grup sumber daya**, pilih **DocumentIntelligenceResources&lt;xxxx&gt;**.
 1. Di daftar drop-down **Akun penyimpanan**, pilih nama satu-satunya akun penyimpanan yang terdaftar.
 1. Dalam daftar drop-down **Kontainer blob**, pilih **1099examples**, lalu pilih **Lanjutkan**.
 1. Di halaman **Tinjau dan buat**, pilih **Buat proyek**.
-1. Pilih **Jalankan tata letak** di pop-up *Mulai pelabelan sekarang*, lalu tunggu hingga analisis selesai.
+1. Pilih tombol drop-down untuk **Jalankan tata letak** dan pilih **Dokumen yang tidak dianalisa**.
+1. Menunggu analisis selesai.
 
 ## Memberi label model kustom 1099 Formulir
 
@@ -121,31 +122,24 @@ Sekarang, beri label formulir contoh dengan beberapa bidang:
 1. Di kanan atas halaman, pilih **+ Tambahkan bidang**, lalu pilih **Bidang**.
 1. Ketikkan **NegaraBagian**, lalu tekan *Enter*.
 1. Dalam dokumen, pilih **CT**, lalu pilih **NegaraBagian**.
-1. Ulangi proses pemberian label untuk formulir yang tersisa dalam daftar di sebelah kiri. Beri label empat bidang yang sama: *FirstName*, *LastName*, *City*, dan *State*.
+1. Ulangi proses pemberian label untuk formulir yang tersisa dalam daftar di sebelah kiri. Beri label empat bidang yang sama: *FirstName*, *LastName*, *City*, dan *State*. Perhatikan bahwa dua dokumen tidak memiliki data nama apa pun untuk diberi label.
 
 ## Melatih model kustom 1099 Formulir
 
 Sekarang, Anda dapat melatih model kustom kedua:
 
-1. Di Azure AI Document Intelligence Studio, pilih **Latih**.
+1. Di Azure AI Document Intelligence Studio,pada kanan atas pilih **Latih**.
 1. Dalam dialog **Latih model baru**, di kotak teks **ID Model**, ketik **1099FormsModel**.
 1. Dalam daftar drop-down **Mode build**, pilih **Template**, lalu pilih **Latih**.
 1. Dalam dialog **Pelatihan sedang berlangsung**, pilih **Buka Model**.
 1. Proses ini memerlukan waktu beberapa menit. Refresh browser sesekali hingga kedua model menampilkan status **berhasil**.
 
-## Membuat dan merakit model yang disusun
-
-Dua model kustom, yang menganalisis 1040 dan 1099 formulir pajak, sekarang telah selesai. Anda dapat melanjutkan untuk membuat model yang disusun:
-
-1. Di halaman Model Azure AI Document Intelligence, pilih **1040FormsModel** dan **1099FormsModel**.
-1. Di bagian atas daftar model, pilih **Buat**.
-1. Dalam dialog **Buat model baru**, di kotak teks **ID Model**, ketik **TaxFormsModel**, lalu pilih **Buat**. Azure AI Document Intelligence membuat model tersusun dan menampilkannya dalam daftar model kustom:
-
-## Menggunakan model yang disusun
+## Menggunakan model
 
 Sekarang setelah model yang disusun selesai, mari kita uji dengan formulir contoh:
 
-1. Di Azure AI Document Intelligence Studio, pilih halaman **Uji**, pilih **TaxFormsModel** dari menu dropdown.
+1. Di Studio Kecerdasan Dokumen Azure AI, pilih halaman **Model** pilih **1040FormsModel**.
+1. Pilih **Uji**.
 1. Pilih **Telusuri file** lalu telusuri lokasi tempat Anda mengkloning repositori.
 1. Pilih **03-composed-model/trainingdata/TestDoc/f1040_7.pdf**, lalu pilih **Buka**.
 1. Pilih **Jalankan analisis**. Azure AI Document Intelligence menganalisis formulir dengan menggunakan model tersusun.

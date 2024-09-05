@@ -14,7 +14,7 @@ Sebelum dapat memanggil layanan Azure AI Document Intelligence, Anda harus membu
 
 1. Di tab browser, buka portal Azure di [https://portal.azure.com](https://portal.azure.com?azure-portal=true), masuk dengan akun Microsoft yang terkait dengan langganan Azure Anda.
 1. Di beranda portal Azure, navigasikan ke kotak pencarian atas dan ketik **Document Intelligence** lalu tekan **Enter**.
-1. Di halaman **Document Intelligence**, pilih **Buat**.
+1. Di halaman **Document Intelligence**, pilih **Buat Document Intelligence**.
 1. Di halaman **Buat Document Intelligence**, gunakan hal berikut untuk mengonfigurasi sumber daya Anda:
     - **Langganan**: Langganan Azure Anda.
     - **Grup sumber daya**: Pilih atau buat grup sumber daya dengan nama unik seperti *DocIntelligenceResources*.
@@ -54,7 +54,7 @@ Sekarang mari kita jelajahi aplikasi yang menggunakan SDK layanan Azure Document
 1. Buka palet (SHIFT+CTRL+P) dan jalankan **Git: Perintah klon** untuk mengkloning repositori `https://github.com/MicrosoftLearning/mslearn-ai-document-intelligence` ke folder lokal (tidak masalah folder mana).
 1. Setelah repositori dikloning, buka folder di Visual Studio Code.
 
-    > **Catatan**: Jika Visual Studio Code menampilkan pesan pop-up yang meminta Anda untuk memercayai kode yang Anda buka, klik opsi **Ya, saya memercayai penulisnya** pada pop-up tersebut.
+    > **Catatan**: Jika Visual Studio Code menampilkan pesan pop-up yang meminta Anda memercayai kode yang Anda buka, klik opsi **Ya, saya memercayai pembuatnya** di pop-up.
 
 1. Tunggu sementara file tambahan diinstal untuk mendukung proyek kode C# di repositori.
 
@@ -81,7 +81,7 @@ Aplikasi untuk C# dan Python telah disediakan, serta sampel file pdf yang akan A
     **Python**:
 
     ```powershell
-    pip install azure-ai-formrecognizer==3.3.0
+    pip install azure-ai-formrecognizer==3.3.3
     ```
 
 ## Menambahkan kode untuk menggunakan layanan Azure Document Intelligence
