@@ -1,10 +1,1 @@
-#README
-
-We've turned off the ability to report issues directly on this repo and do not monitor PRs.
-
-Provide feedback here: https://aka.ms/provide-feedback
-
-Or, if you are a trainer with a microsoft.com email address, please create a ticket in AzDO.
-
-# kecerdasan-dokumen-mslearn
-File lab untuk modul Azure AI Document Intelligence
+> **CATATAN**: Repositori ini sedang diarsipkan, dan tidak lagi dipertahankan. Kunjungi jalur pembelajaran [Pengembangan solusi ekstraksi informasi AI](https://learn.microsoft.com/training/paths/ai-extract-information/) dan [repositori tugas terkait](https://github.com/MicrosoftLearning/mslearn-ai-information-extraction), atau [dokumentasi Azure AI Foundry](https://learn.microsoft.com/azure/ai-foundry/)
